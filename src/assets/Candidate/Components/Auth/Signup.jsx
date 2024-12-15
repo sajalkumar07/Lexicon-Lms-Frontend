@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import LoginPng from "../../assets/2952143.png";
+import LoginPng from "../../assets/signup2.png";
 import { registerUser } from "../../Services/SignupApi";
 
 const pageVariants = {
