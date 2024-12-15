@@ -5,6 +5,7 @@ import Robot from "./Images/guy.jpg";
 import Computer from "./Images/3d.png";
 import Computer2 from "./Images/codeani.gif";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
@@ -19,29 +20,51 @@ const LandingPage = () => {
           <div className="absolute bg-black opacity-70 inset-0"></div>
 
           <div className="flex justify-center items-center min-h-screen z-10 relative flex-col space-y-4">
-            <div className="cursor-pointer bg-white bg-opacity-10 p-3 w-60 h-18 flex justify-center items-center text-center space-x-2 rounded-full backdrop-blur-md shadow-lg hover:scale-105 duration-300">
+            <motion.div
+              className="cursor-pointer bg-white bg-opacity-10 p-3 w-60 h-18 flex justify-center items-center text-center space-x-2 rounded-full backdrop-blur-md shadow-lg hover:scale-105 duration-300"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
               <h1 className="cursor-pointer text-white font-semibold tracking-normal flex items-center">
                 Become Instructor
               </h1>
               <span className="flex justify-center items-center">
                 <ArrowRight />
               </span>
-            </div>
-            <h1 className="text-4xl font-bold">
+            </motion.div>
+
+            <motion.h1
+              className="text-4xl font-bold"
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               Shape Your Future with{" "}
               <span className="text-orange-500">LEXICON</span>
-            </h1>
-            <p className="text-xl font-semibold text-center text-gray-400">
+            </motion.h1>
+
+            <motion.p
+              className="text-xl font-semibold text-center text-gray-400"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
               Unlock your potential with our free online coding and training
               platform designed <br />
               to empower you on your tech journey.
-            </p>
+            </motion.p>
 
-            <div className="cursor-pointer bg-orange-700 p-3  w-28 h-18 flex justify-center items-center rounded-md hover:bg-orange-600">
-              <h1 className=" cursor-pointer text-black font-semibold tracking-normal ">
+            <motion.div
+              className="cursor-pointer bg-orange-700 p-3 w-28 h-18 flex justify-center items-center rounded-md hover:bg-orange-600"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: 0.4 }}
+            >
+              <h1 className="cursor-pointer text-black font-semibold tracking-normal">
                 Explore
               </h1>
-            </div>
+            </motion.div>
           </div>
         </main>
 

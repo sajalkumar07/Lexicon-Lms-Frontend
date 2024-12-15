@@ -16,3 +16,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-glow {
+    color: orange; /* Adjust text color if necessary */
+  }
+  .text-glow-one {
+    color: blue;
+  }
+}

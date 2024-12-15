@@ -16,18 +16,33 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="flex justify-between items-center gap-8">
-                <li>Home</li>
-                <li>Courses</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li className="relative group cursor-pointer">
+                  Home
+                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                </li>
+
+                <li className="relative group cursor-pointer">
+                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                  Courses
+                </li>
+                <li className="relative group cursor-pointer ">
+                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                  About
+                </li>
+                <li className="relative group cursor-pointer">
+                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                  Contact
+                </li>
               </ul>
             </div>
             <div className="flex justify-between items-center gap-8">
               <Link to="/login">
-                <div>Login</div>
+                <div className="bg-transparent p-2  rounded-sm">Login</div>
               </Link>
               <Link to="/signup">
-                <div>Signup</div>
+                <div className="bg-orange-400 p-2  text-black rounded-sm">
+                  Signup
+                </div>
               </Link>
             </div>
           </header>
