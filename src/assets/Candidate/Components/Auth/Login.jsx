@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import LoginPng from "../../assets/programmer-flat-illustration_418302-176.png";
+import LoginPng from "../../assets/programmer.png";
 import Loader from "../../assets/spin-unscreen.gif"; // The loading GIF import
 import { loginUser } from "../../Services/LoginApi";
 
