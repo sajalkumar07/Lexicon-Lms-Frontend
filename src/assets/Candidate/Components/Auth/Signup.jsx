@@ -92,6 +92,7 @@ const Signup = () => {
                   required
                 />
               </div>
+
               <div className="flex justify-center flex-col">
                 <label
                   htmlFor="Email"
@@ -108,6 +109,7 @@ const Signup = () => {
                   required
                 />
               </div>
+
               <div className="flex justify-center flex-col">
                 <label
                   htmlFor="Password"
@@ -118,7 +120,7 @@ const Signup = () => {
                 <input
                   type="password"
                   placeholder="••••••••"
-                  className="h-[50px] p-5 rounded-l border-[1px] border-black outline-none "
+                  className="h-[50px] p-5 rounded-l border-[1px] border-black outline-none"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required

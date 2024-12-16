@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       <main className="">
-        <nav className="fixed top-0 left-0 w-full p-3 bg-black bg-opacity-15 backdrop-blur-md shadow-md z-50">
+        <nav className="fixed top-0 left-0 w-full p-3  bg-opacity-100 backdrop-blur-sm  z-50">
           <header className="flex justify-between items-center">
             <div className="flex items-center ">
               <h1 className="text-3xl font-bold">
@@ -36,13 +36,13 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex justify-between items-center gap-8">
-              <Link to="/login">
-                <div className="bg-transparent p-2  rounded-sm">Login</div>
-              </Link>
+              {/* <Link to="/login">
+                <div className="bg-transparent p-2  rounded-sm">Join Now</div>
+              </Link> */}
               <Link to="/signup">
-                <div className="bg-orange-400 p-2  text-black rounded-sm">
-                  Signup
-                </div>
+                <button className="cursor-pointer bg-white bg-opacity-10 p-3  w-auto h-10 flex justify-center items-center text-center space-x-2 rounded-full backdrop-blur-md shadow-lg hover:bg-opacity-15 ml-auto duration-300">
+                  Join Now
+                </button>
               </Link>
             </div>
           </header>
