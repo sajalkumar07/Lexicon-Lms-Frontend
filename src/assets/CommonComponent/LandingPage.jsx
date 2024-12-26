@@ -28,17 +28,19 @@ const LandingPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h1 className="cursor-pointer text-white font-semibold tracking-normal flex items-center">
-                Become Instructor
-              </h1>
-              <span className="flex justify-center items-center">
+              <Link to="/instructor-dashboard">
+                <h1 className="cursor-pointer text-white font-semibold tracking-normal flex items-center">
+                  Become Instructor
+                </h1>
+              </Link>
+              <span className="flex justify-center items-center text-white">
                 <ArrowRight />
               </span>
             </motion.div>
 
             {/* Heading */}
             <motion.h1
-              className="text-4xl font-bold"
+              className="text-4xl font-bold text-white"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -73,7 +75,7 @@ const LandingPage = () => {
           </div>
         </main>
 
-        <section className="space-y-28">
+        <section className="space-y-28 bg-black text-white">
           <div className="flex justify-center items-center ">
             <div className="flex justify-between items-center p-3 w-[80%]  ">
               <div className="space-y-5 ">

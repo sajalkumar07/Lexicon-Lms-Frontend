@@ -60,7 +60,7 @@ const Login = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      className="flex justify-center items-center"
+      className="flex justify-center items-center bg-black text-white"
     >
       <main className="flex flex-col md:flex-row w-full h-screen">
         {/* Left Section */}
@@ -97,7 +97,7 @@ const Login = () => {
               <div className="flex flex-col">
                 <label
                   htmlFor="email"
-                  className="mb-2 text-sm font-medium text-white"
+                  className="mb-2 text-sm font-medium text-white "
                 >
                   Email
                 </label>
@@ -105,7 +105,7 @@ const Login = () => {
                   id="email"
                   type="email"
                   placeholder="you@example.com"
-                  className="h-[50px] p-5 rounded outline-none"
+                  className="h-[50px] p-5 rounded outline-none border-[1px] border-black"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -124,7 +124,7 @@ const Login = () => {
                   id="password"
                   type="password"
                   placeholder="••••••••"
-                  className="h-[50px] p-5 rounded outline-none"
+                  className="h-[50px] p-5 rounded outline-none border-[1px] border-black"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required

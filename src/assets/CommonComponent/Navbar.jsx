@@ -6,25 +6,29 @@ const Navbar = () => {
   return (
     <div>
       <main className="">
-        <nav className="fixed top-0 left-0 w-full p-3  bg-opacity-100 backdrop-blur-sm  z-50">
+        <nav className="fixed top-0 left-0 w-full p-3  bg-opacity-100 backdrop-blur-sm  z-50 text-white">
           <header className="flex justify-between items-center">
             <div className="flex items-center ">
-              <h1 className="text-3xl font-bold">
+              <h1 className="text-3xl font-bold text-white">
                 <span className="text-orange-500">L</span>
                 EXICON
               </h1>
             </div>
             <div>
               <ul className="flex justify-between items-center gap-8">
-                <li className="relative group cursor-pointer">
-                  Home
-                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
-                </li>
+                <Link to="/">
+                  <li className="relative group cursor-pointer">
+                    Home
+                    <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                  </li>
+                </Link>
 
-                <li className="relative group cursor-pointer">
-                  <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
-                  Courses
-                </li>
+                <Link to="/get-courses">
+                  <li className="relative group cursor-pointer">
+                    <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+                    Courses
+                  </li>
+                </Link>
                 <li className="relative group cursor-pointer ">
                   <span className="absolute left-1/2 bottom-0 block w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
                   About

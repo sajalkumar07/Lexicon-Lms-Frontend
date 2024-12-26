@@ -58,7 +58,7 @@ const Signup = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      className="flex justify-center items-center"
+      className="flex justify-center items-center text-white bg-black"
     >
       <main className="flex flex-col md:flex-row  w-[100%] h-screen p-0 md:p-0 ">
         <div className="hidden md:flex h-full w-full md:w-[50%] items-center justify-center p-10 relative">
