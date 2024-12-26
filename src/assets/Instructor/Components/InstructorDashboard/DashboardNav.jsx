@@ -1,76 +1,29 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import Typography from "@mui/material/Typography"; // Import Typography
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { Divider } from "@material-ui/core";
 
-export default function TemporaryDrawer() {
-  const [open, setOpen] = React.useState(false);
-
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  };
-
-  const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "8px",
-          alignItems: "center",
-        }}
-      >
-        <Typography className="text-xl">LEXICON INSTRUCTOR</Typography>{" "}
-        {/* Title */}
-        <IconButton onClick={toggleDrawer(false)}>
-          <CloseIcon />
-        </IconButton>
-      </Box>
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
+const DashboardNav = () => {
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {DrawerList}
-      </Drawer>
+      <aside className="bg-black min-h-screen w-64 text-white space-y-10 p-6">
+        <div>
+          <h1 className="text-xl font-bold whitespace-nowrap">
+            <span className="text-orange-400">L</span>EXICON INSTRUCTOR
+          </h1>
+        </div>
+        <div className="w-full border-t border-gray-700 mt-4"></div>
+        <div>
+          <ul className="space-y-6">
+            <li>Courses</li>
+            <li>Courses</li>
+            <li>Courses</li>
+            <li>Courses</li>
+            <li>Courses</li>
+          </ul>
+        </div>
+      </aside>
     </div>
   );
-}
+};
+
+export default DashboardNav;
