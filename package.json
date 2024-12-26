@@ -23,14 +23,14 @@
     "framer-motion": "^11.14.4",
     "lucide-react": "^0.468.0",
     "material-ui-search-bar": "^1.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router-dom": "^7.0.2",
     "react-spinners": "^0.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
-    "@types/react": "^18.3.12",
+    "@types/react": "^17.0.83",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
